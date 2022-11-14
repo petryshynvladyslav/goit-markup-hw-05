@@ -121,6 +121,7 @@ header {
 .header-nav-link:focus::after{
   transform: translateX(-50%) scale(1);
   opacity: 1;
+  
 }
 
 .solution-container{
@@ -467,7 +468,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
   cursor: pointer;
   border-radius: 4px;
 
-  transition: color var(--anim-fast), background-color var(--anim-fast);
+  transition: color var(--anim-fast), background-color var(--anim-fast), box-shadow var(--anim-fast);
 }
 .button-secondary:focus,
 .button-secondary:hover {
@@ -494,6 +495,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
       border-radius: 4px ;
       background-color: #ffffff;
       fill: #AFB1B8;
+      transition: fill var(--anim-fast), border-color var(--anim-fast);
 }
 .client-link:hover,
 .client-link:focus{
@@ -552,6 +554,7 @@ footer {
  width: 370px;
  margin-right: 30px;
  margin-bottom: 30px;
+ transition: box-shadow var(--anim-fast);
 
 }
 
@@ -671,4 +674,9 @@ border: 1px solid #EEEEEE;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+ 
+}
+.modal-icon {
+
 }
