@@ -508,20 +508,21 @@
       <form class="footer-form" name="footer-form">
         <input class="mail-field" type="text" name="user_mail" id="user_mail" placeholder="E-mail"/>
         <button type="button" class="footer-button button">Підписатися
+          <svg class="icon-send" widht="24" height="24">
+            <use href="./images/icons.svg#icon-send"></use>
+          </svg>
         </button>
       </form>
     </div>
     </div>
 
 
-    
-      
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
-          <svg class="modal-icon" width="" height="">
+          <svg class="modal-icon" width="20" height="20">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
@@ -550,14 +551,14 @@
             </svg>
            </div>
              <label class="modal-form-label" for="user_message">Коментар</label>
-            <textarea class="modal-form-message" name="user_message" id="user_message" rows="6"></textarea>
+            <textarea class="modal-form-message" name="user_message" id="user_message" rows="6"  placeholder="Введіть текст"></textarea>
           
         </div>
         <div class="modal-form-agreement" role="group">
           <input class="modal-form-checkbox" type="checkbox" id="user_agreement" />
           <label class="modal-form-agreement-desc" for="user_agreement">Погоджуюся з розсилкою та приймаю <a class="modal-form-agreement-link" href="">Умови договору</a></label>
         </div>
-        <button class="modal-form-btn" type="submit">Відправити</button>
+        <button class="modal-form-btn button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
