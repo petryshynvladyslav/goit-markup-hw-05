@@ -284,7 +284,10 @@ text-transform: uppercase;
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  
+
 }
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -455,7 +458,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
  .footer-socials-header{
   font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     color: #ffffff;
@@ -527,6 +530,42 @@ footer {
   padding-bottom: 60px;
 }
 
+.footer-form{
+  display: flex;
+  gap: 12px;
+
+}
+
+.footer-form-box{
+margin-left: 93px;
+}
+
+.mail-field{
+  width: 358px;
+  height: 50px;
+  color: #ffffff;
+  outline: unset;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.mail-field::placeholder{
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+ 
+}
+.foooter-form-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+  
+}
+
 .address {
   display: inline-block;
   margin-top: 20px;
@@ -538,6 +577,18 @@ footer {
 .footer-container{
   display: flex;
 
+}
+.footer-button{
+  display: inline-flex;
+}
+.footer-button::after{
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-image: url();
+  background-size: contain;
+  
 }
 
 .portfolio-list-name {
@@ -659,6 +710,7 @@ border: 1px solid #EEEEEE;
 
   width: 528px;
   min-height: 581px;
+  padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -687,8 +739,104 @@ border: 1px solid #EEEEEE;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
- 
 }
-.modal-icon {
+
+.modal-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
 
 }
+
+.modal-form-label {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+    color: #757575;
+
+
+
+ 
+}
+.modal-form-wraper {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+.modal-form-field {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    transition: outline var(--anim-fast);
+    
+}
+.modal-form-field:focus{
+  outline-color: rgba(33, 150, 243, 1);
+}
+
+.modal-form-field:focus + .modal-form-icon {
+  fill: rgba(33, 150, 243, 1);
+}
+
+.modal-form-icon{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: fill var(--anim-fast);
+}
+.modal-form-group {
+  margin-bottom: 20px;
+
+  
+}
+.modal-form-message{
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+}
+.modal-form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 54px;
+}
+
+
+.modal-form-agreement-desc {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+    color: #757575;
+
+}
+.modal-form-agreement-link{
+  color: #2196f3;
+}
+.modal-form-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.modal-form-checkbox:checked {
+  
+}
+ 
